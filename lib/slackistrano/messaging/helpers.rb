@@ -20,7 +20,7 @@ module Slackistrano
       end
 
       def project
-        options.fetch(:project)
+        options.fetch(:project, '')
       end
 
       def branch
