@@ -19,6 +19,10 @@ module Slackistrano
         fetch(:local_user, default)
       end
 
+      def project
+        options.fetch(:project)
+      end
+
       def branch
         fetch(:branch)
       end

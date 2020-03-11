@@ -20,6 +20,7 @@ module Slackistrano
         @channel = options.delete(:channel)
         @token = options.delete(:token)
         @webhook = options.delete(:webhook)
+        @project = options.delete(:project)
       end
 
       def payload_for_starting
